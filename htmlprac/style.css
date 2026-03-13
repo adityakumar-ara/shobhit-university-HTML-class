@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.stars {
+    font-size: 50px; /* Makes the stars big */
+    cursor: pointer; /* Changes the mouse to a hand pointer */
+    user-select: none; /* Prevents text highlighting when clicking rapidly */
+}
+
+.star {
+    color: #ccc; /* Default gray color */
+    transition: color 0.2s ease-in-out; /* Smooth color change */
+}
+
+/* This class will be added by JavaScript */
+.star.active {
+    color: #FFD700; /* Gold color */
+}

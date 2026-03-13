@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form action="forst_page.php">
+    <form action="forst_page.php" method="get">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname" ><br><br>
+        <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname" ><br><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="age">age</label>
+        <input type="date" id="age" name="age"><br><br>
+        <label for="time">time</label>
+        <input type="time" id="time" name="time"><br><br>
+        <label for="Gender">Gender:-</label>
+        <select name="state" id="state">
+            <option value="" disabled selected>i'm accept all term and condition</option>
+            <option value="br">BR</option>
+            <option value="up">UP</option>
+            <option value="mp">MP</option>
+            <option value="jh">JH</option>
+            <option value="mh">MH</option>
+        </select>
+        <label for="genger">male</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="genger">female</label>
+        <input type="radio" id="gender" name="gender"><br><br>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="">i'm accept all term and condition</label><br><br>
+        <div class="feedback-container">
+    <h2>Rate your experience</h2>
+    
+    <div class="stars" id="star-container">
+        <span class="star" data-value="1">✪</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+
+    <p id="rating-message">Click a star to rate!</p>
+</div>
         <input type="button" value="submit">
     </form>
 </body>
+<script src="hello.js"></script>
 </html>
