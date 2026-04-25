@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Styled Page</title>
+
+    <style>
+        /* --- Enhanced CSS Styling --- */
+        body {
+            /* Using a more modern font stack */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            text-align: center;
+
+            /* Using Flexbox to center the box vertically and horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #003366;
+            /* Slightly darker, richer blue */
+            margin-top: 0;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+            /* Improves readability */
+        }
+
+        .box {
+            background-color: white;
+            padding: 40px;
+            /* Increased padding for better breathing room */
+            margin: 20px;
+            border-radius: 15px;
+            /* Softer, rounder corners */
+            /* A softer, more modern shadow */
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            /* Prevents the box from getting too wide */
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            /* Smooth transition effect for the hover state */
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+        }
+
+        /* Added an active state so it 'clicks' down */
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Welcome Students</h1>
+        <p id="dynamic-text">This is a simple webpage designed using HTML and CSS.</p>
+
+        <button onclick="updatePage()">Click Me</button>
+    </div>
+
+    <script>
+        function updatePage() {
+            // This script changes the text when the user clicks the button
+            let textElement = document.getElementById("dynamic-text");
+            textElement.innerHTML = "<strong>Functionality Improved!</strong> You successfully interacted with the page.";
+            textElement.style.color = "#28a745"; // Changes text color to green
+        }
+    </script>
+</body>
+
+</html>
