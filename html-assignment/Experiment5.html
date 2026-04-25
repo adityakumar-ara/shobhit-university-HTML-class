@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Registration Form</h2>
+
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter Name"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter password"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other<br><br>
+
+        <input type="checkbox" required> I agree to Terms & Conditions<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
